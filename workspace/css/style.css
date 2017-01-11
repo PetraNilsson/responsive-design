@@ -1,0 +1,477 @@
+/* Global style */
+body {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+/* includes the padding and border in the total width and height of an element.*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* creating a grid system whith 12 columns*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* all columns to the left*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid black;*/
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/*-----------------sidenav menu------------------*/
+#menu {
+    display: block;
+    position: relative;
+    background-color: lightblue;
+    height: 3em;
+    width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/*h3 {
+    display: block;
+    position: relative;
+    float: right;
+    padding-top: 0.3em;
+    padding-right: 1.1em;
+}*/
+
+/*------------index.html--------------*/
+
+#row1 {
+    display: block;
+    position: relative;
+    padding: 0.3em;
+    margin-bottom: 2.5em;
+}
+
+#first_image {
+    
+}
+
+#first_img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#first_img2 {
+    display: none;
+}
+
+#first_img3 {
+    display: none;
+}
+
+#first_text {
+    text-align: center;
+}
+
+/*style for search*/
+.search {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#search_input {
+    width: 100%;
+    height: 3em;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    box-shadow: 0px 0px 0px;
+    border: 1px solid silver;
+}
+
+#search_submit {
+    width: 80%;
+    height: 3em;
+    margin-top: 2em;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    background-color: lightblue;
+    color: white;
+    font-size: 1em;
+    box-shadow: 0px 1px 1px gray;
+    border: none;
+}
+
+#row2 {
+    padding: 0.3em;
+    margin-top: 2em;
+}
+
+#smal_img {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin: 0 0 30px;
+    padding: 0 8px;
+}
+
+#img {
+    width: 100%;
+}
+
+.label {
+    background-color: lightblue;
+    padding: 0.3em;
+    text-align: center;
+    min-height: 7.7em;
+    max-height: 7.5em;
+    border-radius: 0em 0em 0.2em 0.2em
+}
+
+.p_lable {
+    color: white;
+    font-weight: bold
+}
+
+#d_icon_count {
+    display: block;
+    position: relative;
+    float: right;
+    /*margin-left: 8.5em;*/
+    color: white;
+    margin-top: 2.5em;
+    margin-right: 0.3em;
+}
+
+#d_icon {
+    display: block;
+    position: relative;
+    width: 2.3em;
+    float: right;
+    margin-top: 0.8em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+/*-------------Footer------------------*/
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+    margin-top: 4em;
+}
+
+.social_media {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+    margin-top: 4em;
+}
+
+/*-------------recipe.html-------------*/
+
+.recipe_label {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#recipe_img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#ingredients{
+  
+}
+
+#back {
+    display: block;
+    position: relative;
+    color: white;
+    float: right;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+
+
+
+
+/*-----------------------media queries-----------------------*/
+
+@media only all {
+    
+}
+
+@media (min-width: 20em) {
+    #smal_img {
+        float: left;
+    }
+    
+    #first_img {
+        width: 17em;
+    }
+}
+
+@media (min-width: 45em) {
+    #smal_img {
+        width: 33%;
+    }
+    
+    .p_lable {
+        font-size: 0.9em;
+    }
+    
+    #first_img {
+        display: none;
+    }
+    
+    #first_img2 {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    #search_input {
+        display: block;
+        position: relative;
+        float: left;
+        width: 50%;
+        margin-left: 7em;
+    }
+    
+    #search_submit {
+        width: 20%;
+        margin-top: 0em;
+        display: block;
+        position: relative;
+        float: right;
+        margin-right: 7em;
+    }
+    
+    /*recipe.html*/
+    #recipe_img {
+        display: block;
+        position: relative;
+        margin-left: 5.5em;
+        margin-right: auto;
+        width: 15em;
+        float: left;
+    }
+    
+    #ingredients {
+        display: block;
+        position: relative;
+        margin-right: 5.5em;
+        float: right;
+        width: 35%;
+    }
+    
+}
+
+@media (min-width: 65em) {
+    #smal_img {
+        width: 20%;
+    }
+    
+    .p_lable {
+        font-size: 0.9em;
+    }
+    
+    #first_img {
+        display: none;
+    }
+    
+    #first_img2 {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    #search_input {
+        display: block;
+        position: relative;
+        float: left;
+        width: 50%;
+        margin-left: 10em;
+    }
+    
+    #search_submit {
+        width: 20%;
+        margin-top: 0em;
+        display: block;
+        position: relative;
+        float: right;
+        margin-right: 10em;
+    }
+    
+    /*recipe.html*/
+    #recipe_img {
+        display: block;
+        position: relative;
+        margin-left: 12em;
+        margin-right: auto;
+        float: left;
+        width: 15em;
+    }
+    
+    #ingredients {
+        display: block;
+        position: relative;
+        margin-right: 12em;
+        float: right;
+        width: 35%;
+    }
+    
+}
+
+@media (min-width: 80em) {
+    #smal_img {
+        width: 20%;
+    }
+    
+     #first_img {
+        display: none;
+    }
+    
+    #first_img2 {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    #search_input {
+        display: block;
+        position: relative;
+        float: left;
+        width: 40%;
+        margin-left: 20em;
+    }
+    
+    #search_submit {
+        width: 15%;
+        margin-top: 0em;
+        display: block;
+        position: relative;
+        float: right;
+        margin-right: 20em;
+    }
+    
+    /*recipe.html*/
+    #recipe_img {
+        display: block;
+        position: relative;
+        margin-left: 15em;
+        margin-right: auto;
+        float: left;
+        width: 20em;
+    }
+    
+    #ingredients {
+        display: block;
+        position: relative;
+        margin-right: 15em;
+        float: right;
+        width: 35%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
